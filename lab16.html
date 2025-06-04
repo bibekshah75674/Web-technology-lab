@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="/action.php">
+        <table width="80%">
+        <tr>
+            <td colspan="2"><h2 style="text-align: center;">Registration Form</h2></td>
+        </tr>
+        <tr>
+            <td>Student Name</td>
+            <td><input type="text" placeholder="student_name"></td>
+        </tr>
+        <tr>
+            <td>Father's Name</td>
+            <td><input type="text" placeholder="father_name"></td>
+        </tr>
+        <tr>
+            <td>Mother's Name</td>
+            <td><input type="text" placeholder="mother_name"></td>
+        </tr>
+        <tr>
+            <td>Date of Birth</td>
+            <td><input type="date" name="date_of_birth" id="dob"></td>
+        </tr>
+        <tr>
+            <td>Email ID</td>
+            <td><input type="email" name="email" id="email" placeholder="someone@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" id="male" value="male" >
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female" value="female" >
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" id="other" value="other" >
+                <label for="other">Other</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Mobile No</td>
+            <td><input type="tel" name="mobile" placeholder="98XXXXXXXX"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><textarea name="address"></textarea></td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td><input type="text" placeholder="state_name"></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" placeholder="city_name"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="submit"></td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
