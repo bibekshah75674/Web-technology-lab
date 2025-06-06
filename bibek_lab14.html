@@ -4,19 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table Tag</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
     <table border="1" width="100%">
         <tr>
-            <td><h2 style="text-align: center;">Online Exam System</h2></td>
+            <td colspan="2" style="background-color: cadetblue;"><h2 style="text-align: center; ">Online Exam System</h2></td>
         </tr>
-        <tr>
-            <td>HOME || ABOUT US || COURSES || EXAM DATE || RESULT || GALLERY</td>
+        <tr style="background-color: lightsalmon;">
+            <td colspan="2">
+                <nav>
+                    <a href="#">HOME</a>||
+                    <a href="#">ABOUT US</a>||
+                    <a href="#">EXAM DATE</a>||
+                    <a href="#">SUBJECTS</a>||
+                    <a href="#">GALLERY</a>||
+                    <a href="#">RESULT</a>
+                </nav>
+            </td>
         </tr>
+
+        <tr style="background-color: lightgreen;">
+        <td colspan="2"><marquee style="color: green;"><b><i>Welcome to Online Exam System</i></b></marquee></td>
+        </tr> 
+
         <tr>
-            <td><marquee style="color: green;"><b><i>Welcome to Online Exam System</i></b></marquee></td>
+            <td class="left" width="70%" style="background-color: lightskyblue;">
+                <h3 style="margin: 0%; font-size: 24px;">Most welcome to Online Exam System</h3>
+                <hr>
+                <div style="display: flex; align-items: flex-start; gap: 10px;">
+                <img src="/person_img.jpg" alt="Person" width="160px">
+                <div style="margin: 0%;">
+                <p style="margin: 0;">Video is an electronic medium for the recording, copying, playback, broadcasting, and display of moving visual media.[1] Video was first developed for mechanical television systems, which were quickly replaced by cathode-ray tube (CRT) systems, which, in turn, were replaced by flat-panel displays of several types.Video was first developed for mechanical television systems, which were quickly replaced by cathode-ray tube (CRT) systems.</p>
+                <p>Video systems vary in display resolution, aspect ratio, refresh rate, color capabilities, and other qualities. Analog and digital variants exist and can be carried on a variety of media, including radio broadcasts, magnetic tape, optical discs, computer files, and network streaming.</p>
+                </div>
+                </div>
+            </td>        
+        
+            <td class="right" width="30%" style="background-color: lightslategray;">
+                <div style="text-align: center;">
+                <h3>Our Members</h3>
+                <hr>
+                <marquee direction="up" height="300px"><center>
+                    <p><b>Director</b></p>
+                    <img src="/person_img.jpg" alt="Director" width="100px" >
+                    <p><b>Manager</b></p>
+                    <img src="/person_img.jpg" alt="Director" width="100px">   
+                    </center>
+                </marquee>
+                   
+                </div>
+            </td>
+        </tr>
+        <tr style="background-color: cadetblue;">
+            <td colspan="2" style="text-align: center;"><b>Copyright &copy; 2025 All Rights Reserved</b></td>
         </tr>
     </table>
-    
 </body>
 </html>
+
+

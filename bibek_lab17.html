@@ -1,11 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form</title>
+    <style>
+        td {
+            padding: 0 80px;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body style="font-family: cursive;">
+    <form height="700px">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div style="float: left;padding: 4px;">
+                <label for="name">Full name</label>
+                <select name="name" id="name" required>
+                    <option value="" disabled selected>-select-</option>
+                    <option value="Mr">Mr</option>
+                    <option value="Mrs">Mrs</option>
+                </select>
+                <input type="text" id="name" name="name" required><br>
+                <label for="father">Father's Name</label>
+                <input type="text" id="father" name="father" required><br>
+                <label for="sex">Gender</label>
+                Male<input type="radio" id="sex" name="sex">
+                Female<input type="radio" name="sex" id="sex"><br>
+                <label for="marriage">Maritial Status</label>
+                <select name="marriage" id="marriage" required>
+                    <option value="" disabled selected>-select-</option>
+                    <option value="Married" id="marriage" name="marriage">Married</option>
+                    <option value="Unmarried" id="marriage" name="marriage">Unmarried</option>
+                </select><br>
+                <label for="handicapped">Handicapped</label>
+                No<input type="radio" id="handicapped" name="handicapped" value="No">
+                Yes<input type="radio" id="handicapped" name="handicapped" value="Yes"><br>
+                <label for="ews">EWS</label>
+                No<input type="radio" id="ews" name="ews" value="No">
+                Yes<input type="radio" id="ews" name="ews" value="Yes"><br>
+            </div>
+            <div style="float: right;">
+                <label for="care">In Care of</label>
+                Parents<input type="radio" id="care" name="care" value="Parents">
+                Guardian<input type="radio" id="care" name="care" value="Guardian"><br>
+                <label for="mother">Mother's Name</label>
+                <input type="text" id="mother" name="mother" required><br>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required><br>
+                <label for="category">Category</label>
+                <select name="category" id="category">
+                    <option value="" disabled selected>-select-</option>
+                </select><br>
+                <label for="serviceman">Ex-Serviceman</label>
+                No<input type="radio" id="serviceman" name="serviceman" value="No">
+                Yes<input type="radio" id="serviceman" name="serviceman" value="Yes"><br>
+                <label for="religion">Religion</label>
+                <select name="religion" id="religion" required>
+                    <option value="" disabled selected>-select-</option>
+                    <option value="Hinduism">Hinduism</option>
+                    <option value="Kirant">Kirant</option>
+                </select><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Contact Details</legend>
+            <div style="float: left;">
+                <label for="mobile">Mobile Number</label>
+                <input type="number" id="mobile" name="mobile" required><br>
+                <label for="address_l1">Address Line 1</label>
+                <input type="text" id="address_l1" name="address_l1" required><br>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required><br>
+                <label for="pin">Pin Code</label>
+                <input type="number" id="pin" name="pin" required><br>
+            </div>
+            <div style="float: right;">
+                <label for="email">Email ID</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="address_l2">Address Line 2</label>
+                <input type="text" name="address_l2" id="address_l2"><br>
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="" disabled selected>-select-</option>
+                </select><br>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Qualifications Information</legend>
+            <table style="margin-left: 0px;">
+                <tr>
+                    <th>S.No</th>
+                    <th>Level</th>
+                    <th>Board</th>
+                    <th>Passing Year</th>
+                    <th>Grade Obtained</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        <select name="level[]" id="level1">
+                            <option value="" disabled selected>-select-</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="board[]" id="board1"></td>
+                    <td><input type="number" name="year[]" id="year1"></td>
+                    <td><input type="text" name="grade[]" id="grade1"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>
+                        <select name="level[]" id="level2">
+                            <option value="" disabled selected>-select-</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="board[]" id="board2"></td>
+                    <td><input type="number" name="year[]" id="year2"></td>
+                    <td><input type="text" name="grade[]" id="grade2"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        <select name="level[]" id="level3">
+                            <option value="" disabled selected>-select-</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="board[]" id="board3"></td>
+                    <td><input type="number" name="year[]" id="year3"></td>
+                    <td><input type="text" name="grade[]" id="grade3"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>
+                        <select name="level[]" id="level4">
+                            <option value="" disabled selected>-select-</option>
+                        </select>
+                    </td>
+                    <td><input type="text" name="board[]" id="board4"></td>
+                    <td><input type="number" name="year[]" id="year4"></td>
+                    <td><input type="text" name="grade[]" id="grade4"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Language Knowledge</legend>
+            <table>
+                <tr>
+                    <th>Languages</th>
+                    <th>Listening</th>
+                    <th>Reading</th>
+                    <th>Writing</th>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td><input type="checkbox" name="eng" id="eng" value="listen"></td>
+                    <td><input type="checkbox" name="eng" id="eng" value="read"></td>
+                    <td><input type="checkbox" name="eng" id="eng" value="read"></td>
+                </tr>
+                <tr>
+                    <td>Spanish</td>
+                    <td><input type="checkbox" name="esp" id="esp" value="listen"></td>
+                    <td><input type="checkbox" name="esp" id="esp" value="read"></td>
+                    <td><input type="checkbox" name="esp" id="esp" value="read"></td>
+                </tr>
+                <tr>
+                    <td>Nepali</td>
+                    <td><input type="checkbox" name="nep" id="nep" value="listen"></td>
+                    <td><input type="checkbox" name="nep" id="nep" value="read"></td>
+                    <td><input type="checkbox" name="nep" id="nep" value="read"></td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>Identification Details</legend>
+            <div>
+                <label for="id_no">National ID no</label>
+                <input type="number" id="id_no" name="id_no" required>
+                <label for="passport">Passport no</label>
+                <input type="number" name="passport" id="passport" required> <br>
+                <label for="photo">Upload Photo</label>
+                <input type="file" name="photo" id="photo" required>
+                <label for="signature">Signature</label>
+                <input type="file" name="signature" id="signature" required>
+            </div>
+        </fieldset>
+        <div align="center"><input type="submit" value="Submit">
+            <input type="button" value="Back" onclick="history.back()">
+        </div>
+    </form>
 </body>
 </html>
